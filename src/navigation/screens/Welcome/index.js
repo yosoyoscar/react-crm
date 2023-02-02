@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import welcomeStyles from './styles';
 import Button from '../../../components/Button';
 import { clear } from '../../../utilities/async_storage';
+import Remainder from '../../../features/remainder/remainder';
 
 const Welcome = () => {
     const styles = StyleSheet.create(welcomeStyles());
@@ -23,6 +24,8 @@ const Welcome = () => {
             text='Add a Customer' 
             disabled={false} 
           />
+
+          <Remainder />
 
           <Button
             onPress={() => clear()}

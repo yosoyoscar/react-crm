@@ -14,7 +14,7 @@ const stylesFn = ({ disabled = false }) => {
 
   return StyleSheet.create({
     button: {
-      width: 200,
+      width: 250,
       height: 40,
       borderRadius: 6,
       margin: 10,
