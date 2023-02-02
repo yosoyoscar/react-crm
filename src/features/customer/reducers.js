@@ -80,6 +80,12 @@ const reducers = {
         console.log('fields:', fields);
         state.form.fields = fields
     },
+    loadCustomers: (state) => {
+        // state.status =
+    },
+    loadResult: (state, { payload }) => {
+        state.list.customers = payload
+    },
 }
 
 const slice = createSlice({
@@ -98,6 +104,8 @@ export const {
     editCustomerError,
     editCustomerStatus,
     setFormField,
+    loadCustomers,
+    loadResult,
 } = slice.actions
 
 export default slice.reducer

@@ -25,7 +25,7 @@ const Regions = () => {
               key={region.id}
               style={styles.button} 
               onPress={() => navigate('Customers', region)} 
-              text={region.title + ' (' + customers.filter( (c) => c.region === region.id).length  +')'}
+              text={region.title}
               disabled={false} 
             />
           )}

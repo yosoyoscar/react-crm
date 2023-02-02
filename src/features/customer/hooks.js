@@ -59,5 +59,11 @@ export const useEditCustomerStatus = () => {
 }
 
 export const useListCustomers = () => {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(actions.loadCustomers())
+  }, [dispatch])
+
   return useSelector(state => state.customer.list.customers)
 }

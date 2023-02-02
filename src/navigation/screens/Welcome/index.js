@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import welcomeStyles from './styles';
 import Button from '../../../components/Button';
+import { clear } from '../../../utilities/async_storage';
 
 const Welcome = () => {
     const styles = StyleSheet.create(welcomeStyles());
@@ -24,8 +25,8 @@ const Welcome = () => {
           />
 
           <Button
-            onPress={() => false} 
-            text='Clear Local Storage' 
+            onPress={() => clear()}
+            text='Clear Local Storage'
             disabled={false} 
           />
 

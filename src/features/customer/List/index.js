@@ -20,7 +20,7 @@ const List = ( { region }) => {
             {(customers && customers.filter( (c) => c.region === region.id).length > 0) ? (
                 customers
                     .filter( (c) => c.region === region.id)
-                    .map((item) => <Row item={item}/>)
+                    .map((item) => <Row key={item.id} item={item}/>)
             ) : (
                 <>
                     <Text>{'No customers yet!'}</Text>
