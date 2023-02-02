@@ -18,11 +18,9 @@ const List = ( { region }) => {
             <Title text={title} />
 
             {(customers && customers.filter( (c) => c.region === region.id).length > 0) ? (
-                <FlatList style={{width: '100%'}}
-                    data={customers.filter( (c) => c.region === region.id) || []}
-                    renderItem={(props) => <Row {...props} />}
-                    keyExtractor={(item) => item.id}
-                />
+                customers
+                    .filter( (c) => c.region === region.id)
+                    .map((item) => <Row item={item}/>)
             ) : (
                 <>
                     <Text>{'No customers yet!'}</Text>

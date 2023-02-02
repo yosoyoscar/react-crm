@@ -4,7 +4,7 @@ const styles = () => {
       margin: '5%',
     },
     form: {
-      height: '100vh',
+      //height: '100vh',
       width: '100%'
     },
     picker: {

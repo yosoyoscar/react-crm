@@ -12,21 +12,18 @@ const Welcome = () => {
           <Text style={styles.text}>{'Customer Manager Plus'}</Text>
 
           <Button
-            style={styles.button} 
             onPress={() => navigate('Regions')} 
             text='View Regions' 
             disabled={false} 
           />
 
           <Button
-            style={styles.button} 
             onPress={() => navigate('Add Customer')} 
             text='Add a Customer' 
             disabled={false} 
           />
 
           <Button
-            style={styles.button} 
             onPress={() => false} 
             text='Clear Local Storage' 
             disabled={false} 
