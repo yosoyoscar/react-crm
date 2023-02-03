@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import WelcomeScreen from './screens/welcome'
+import WelcomeScreen from './screens/Welcome'
 import RegionsScreen from './screens/regions'
 import EditCustomer from './screens/customer/Edit'
 import CustomersList from './screens/customer/List'
