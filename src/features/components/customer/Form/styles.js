@@ -3,19 +3,11 @@ const styles = () => {
     container: {
       margin: '5%',
     },
-    form: {
-      //height: '100vh',
-      width: '100%'
-    },
     picker: {
-      marginTop: 10,
-      marginBottom: 30,
       height: 50,
     },
     switch: {
-      marginTop: 10,
-      marginBottom: 30,
-      height: 30,
+      height: 50,
     },
     viewButton:{
       alignItems: 'center',
@@ -25,7 +17,6 @@ const styles = () => {
       borderColor: 'black',
       borderRadius: 4,
       padding: 15,
-      marginBottom: 20,
     },
     error: {
       color: 'red',

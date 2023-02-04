@@ -11,11 +11,7 @@ const Regions = () => {
     const { navigate } = useNavigation();
     const customers = useSelector(state => state.customer.list.customers)
     console.log('Regions.customers:', customers);
-    const Item = ({title}) => (
-      <View style={styles.item}>
-        <Text style={styles.title}>{title}</Text>
-      </View>
-    );
+
     return (
         <View style={styles.container}>
           <Text style={styles.text}>{'Select a Region'}</Text>
@@ -23,7 +19,6 @@ const Regions = () => {
           {REGIONS.map( (region) => 
             <Button
               key={region.id}
-              style={styles.button} 
               onPress={() => navigate('Customers', region)} 
               text={region.title}
               disabled={false} 
@@ -31,7 +26,6 @@ const Regions = () => {
           )}
 
           <Button
-            style={styles.button} 
             onPress={() => navigate('Add Customer')} 
             text='Add a Customer' 
             disabled={false} 

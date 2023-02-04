@@ -5,14 +5,11 @@ const stylesFn = () => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      alignItems: 'center',
       justifyContent: 'center',
+      alignItems: 'center',
     },
     text: {
-      //fontWeight: 500,
       fontSize: 40,
-      textAlign: 'center',
-      marginBottom: 30,
     }
   });
 }

@@ -7,7 +7,7 @@ const stylesFn = () => {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-    },
+    }
   });
 }
 
