@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, FlatList, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import { useListCustomers } from '../hooks'
+import { useSelector } from 'react-redux'
 import listStyles from './styles';
 import Row from './row'
 import Title from '../../../../components/Title'
@@ -9,7 +9,7 @@ import Button from '../../../../components/Button'
 
 const List = ( { region }) => {
     const { navigate } = useNavigation()
-    const customers = useListCustomers()
+    const customers = useSelector(state => state.customer.list.customers)
     const title = region.title + ' Customers List';
     const styles = StyleSheet.create(listStyles());
 

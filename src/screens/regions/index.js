@@ -20,7 +20,7 @@ const Regions = () => {
             <Button
               key={region.id}
               onPress={() => navigate('Customers', region)} 
-              text={region.title}
+              text={`${region.title} (${customers.filter( (c) => c.region === region.id).length})`}
               disabled={false} 
             />
           )}

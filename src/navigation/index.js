@@ -6,10 +6,12 @@ import RegionsScreen from '../screens/regions'
 import EditCustomer from '../screens/customer/Edit'
 import CustomersList from '../screens/customer/List'
 import AddCustomer from '../screens/customer/New'
+import { useListCustomers } from '../features/components/customer/hooks'
 
 const Stack = createNativeStackNavigator()
 
 const Navigation = () => {
+    useListCustomers()
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName={'Welcome'}>
