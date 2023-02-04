@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import welcomeStyles from './styles';
-import Button from '../../../components/Button';
-import { clear } from '../../../utilities/async_storage';
-import Remainder from '../../../features/remainder/remainder';
+import Button from '../../components/Button';
+import { clear } from '../../utilities/async_storage';
+import Remainder from '../../features/components/remainder/remainder';
 
 const Welcome = () => {
     const styles = StyleSheet.create(welcomeStyles());

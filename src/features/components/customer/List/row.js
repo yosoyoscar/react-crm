@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import { REGIONS } from '../../../utilities/helpers'
+import { REGIONS } from '../../../../utilities/helpers'
 
 const Row = ({ item }) => {
     const { navigate } = useNavigation()

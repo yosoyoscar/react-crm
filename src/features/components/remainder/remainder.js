@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Keyboard, TextInput, View, Text } from 'react-native'
 import Constants from 'expo-constants'
 import * as Notifications from 'expo-notifications'
-import Button from '../../components/Button';
+import Button from '../../../components/Button';
 
 const onSubmit = (seconds) => {
   Keyboard.dismiss()

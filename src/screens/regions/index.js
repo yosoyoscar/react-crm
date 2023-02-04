@@ -3,8 +3,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux'
 import { useNavigation } from '@react-navigation/native';
 import regionsStyles from './styles';
-import Button from '../../../components/Button';
-import { REGIONS } from '../../../utilities/helpers';
+import Button from '../../components/Button';
+import { REGIONS } from '../../utilities/helpers';
 
 const Regions = () => {
     const styles = StyleSheet.create(regionsStyles());

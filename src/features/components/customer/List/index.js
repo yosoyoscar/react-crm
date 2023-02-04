@@ -4,8 +4,8 @@ import { useNavigation } from '@react-navigation/native'
 import { useListCustomers } from '../hooks'
 import listStyles from './styles';
 import Row from './row'
-import Title from '../../../components/Title'
-import Button from '../../../components/Button'
+import Title from '../../../../components/Title'
+import Button from '../../../../components/Button'
 
 const List = ( { region }) => {
     const { navigate } = useNavigation()

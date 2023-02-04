@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView, SafeAreaView } from 'react-native'
-import Edit from '../../../features/customer/Edit'
+import Edit from '../../features/components/customer/Edit'
 
 const EditScreen = () => (
   <SafeAreaView>

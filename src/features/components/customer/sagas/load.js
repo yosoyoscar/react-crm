@@ -1,6 +1,6 @@
 import { all, put, select, delay, takeLatest } from 'redux-saga/effects'
 import * as actions from '../reducers'
-import { get } from '../../../utilities/async_storage'
+import { get } from '../../../../utilities/async_storage'
 
 export function* watchLoadCustomers() {
     yield takeLatest(actions.loadCustomers.toString(), takeLoadCustomers)

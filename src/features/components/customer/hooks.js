@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { PENDING, INPROGRESS } from '../../utilities/helpers'
+import { PENDING, INPROGRESS } from '../../../utilities/helpers'
 import * as actions from './reducers'
 
 export const useUpdateFields = (customerID = null) => {

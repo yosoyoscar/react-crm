@@ -4,10 +4,9 @@ import { useNavigation } from '@react-navigation/native'
 import { View, Text, TextInput, TouchableOpacity, Switch } from 'react-native'
 import { Picker } from '@react-native-picker/picker'
 import { useUpdateFields } from '../hooks'
-import { PENDING, INPROGRESS, REQUESTING, SUCCESS, ERROR } from '../../../utilities/helpers'
-import Button from '../../../components/Button'
+import { PENDING, INPROGRESS, REQUESTING, SUCCESS, ERROR, REGIONS } from '../../../../utilities/helpers'
+import Button from '../../../../components/Button'
 import formStyles from './styles'
-import { REGIONS } from '../../../utilities/helpers'
 
 const Form = ({ handleSubmit, status, customerID, propRegion }) => {
   const styles = formStyles()
