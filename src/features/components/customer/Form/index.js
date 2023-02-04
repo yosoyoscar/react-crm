@@ -7,6 +7,7 @@ import { useUpdateFields } from '../hooks'
 import { PENDING, INPROGRESS, REQUESTING, SUCCESS, ERROR, REGIONS } from '../../../../utilities/helpers'
 import Button from '../../../../components/Button'
 import formStyles from './styles'
+import Remainder from '../../remainder/remainder'
 
 const Form = ({ handleSubmit, status, customerID, propRegion }) => {
   const styles = formStyles()
@@ -85,6 +86,9 @@ const Form = ({ handleSubmit, status, customerID, propRegion }) => {
           {
             (!first_name || !last_name) &&
               <Text style={styles.error}>Please fill first and last name</Text>
+          }
+          {
+            customerID && <Remainder customer={`${first_name} ${last_name}`} />
           }
         </View>
       </View>

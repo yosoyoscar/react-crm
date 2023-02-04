@@ -4,12 +4,12 @@ import Constants from 'expo-constants'
 import * as Notifications from 'expo-notifications'
 import Button from '../../../components/Button';
 
-const onSubmit = (seconds) => {
+const onSubmit = (seconds, customer) => {
   Keyboard.dismiss()
   const schedulingOptions = {
     content: {
       title: 'CRM Remainder',
-      body: 'Open the app and contact a customer asap!',
+      body: `Open the app and contact ${customer} asap!`,
       sound: true,
       priority: Notifications.AndroidNotificationPriority.HIGH,
       color: 'blue'
@@ -36,7 +36,7 @@ const askNotification = async () => {
     console.log('Notification permissions granted.')
 }
 
-const Remainder = () => {
+const Remainder = ({customer}) => {
   useEffect(() => {
     askNotification()
 
@@ -46,7 +46,7 @@ const Remainder = () => {
 
   return (
         <Button
-            onPress={() => onSubmit(5)}
+            onPress={() => onSubmit(5, customer)}
             text='Set Remainder in 5 secs'
             disabled={false}
         />
