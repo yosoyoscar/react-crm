@@ -9,7 +9,7 @@ const stylesFn = () => {
       alignItems: 'center',
     },
     text: {
-      fontSize: 40,
+      fontSize: 30,
     }
   });
 }

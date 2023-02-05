@@ -13,7 +13,6 @@ const Form = ({ handleSubmit, status, customerID, propRegion }) => {
   const styles = formStyles()
   const { navigate } = useNavigation()
   const { fields, setFormField } = useUpdateFields(customerID)
-  console.log('Form.propRegion:', propRegion);
 
   const {
     first_name,
